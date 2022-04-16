@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="EditTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/transparent</item>
+        <item name="colorControlActivated">@color/orange_600</item>
+        <item name="colorControlHighlight">@color/orange_600</item>
+    </style>
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/grey_600</item>
+    </style>
+    <style name="CustomShapeAppearance">
+        <item name="neumorph_cornerFamily">oval</item>
+    </style>
+</resources>

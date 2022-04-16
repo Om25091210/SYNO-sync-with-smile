@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470131257955",
+    "project_id": "syno-493e1",
+    "storage_bucket": "syno-493e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470131257955:android:9e5b4eb7315b36a3c3be56",
+        "android_client_info": {
+          "package_name": "in.aryomtech.syno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470131257955-524ouih0qqu02ods5j0sg58a5iblav5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYsE_gI0OesC1hSeCZh5cLrEih0OONx94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470131257955-524ouih0qqu02ods5j0sg58a5iblav5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

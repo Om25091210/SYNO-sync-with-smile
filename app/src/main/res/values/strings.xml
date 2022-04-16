@@ -1,0 +1,115 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">SYNO-GECB</string>
+    <string name="proceed">Proceed</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="welcome_to_syno">Welcome to SYNO.</string>
+    <string name="what_topics_interest_you">What Topics Interest You?</string>
+    <string name="choose_a_few_topics_that_you_re_intrested_in">Choose a few topics that you\'re interested in.</string>
+    <string name="science">Science</string>
+    <string name="technology">Technology</string>
+    <string name="fiction">Fiction</string>
+    <string name="politics">Politics</string>
+    <string name="movies">Movies</string>
+    <string name="arts_and_culture">Art</string>
+    <string name="food">Food</string>
+    <string name="sports">Sports</string>
+    <string name="anime">Anime</string>
+    <string name="news">News</string>
+    <string name="stocks">Stocks</string>
+    <string name="crypto">Crypto</string>
+
+    <string name="let_s_sync">let\'s sync</string>
+    <string name="sync">Sync</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="focus_on_the_brighter_mind_not_the_differences_that_blind">Focus on the <b>brighter</b> mind not the differences that <b>blind</b>.</string>
+    <string name="welcome">Welcome</string>
+
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Privacy policy</item>
+        <item>About Syno</item>
+        <item>Share</item>
+        <item>About Developers</item>
+        <item>Terms &amp; Conditions</item>
+        <item>Delete Account</item>
+    </array>
+
+    <string name="post">Post</string>
+    <string name="title">Title</string>
+    <string name="describe_here">Describe here…</string>
+    <string name="add_url">Add URL</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="image">Image</string>
+    <string name="category">Category</string>
+    <string name="city">City</string>
+    <string name="art">#Art</string>
+    <string name="bilaspur">#bilaspur</string>
+    <string name="by">By</string>
+    <string name="posted_on">Posted on -</string>
+    <string name="talks_about">TALKS ABOUT :</string>
+    <string name="bio">BIO :</string>
+    <string name="skill_s">SKILLS :</string>
+    <string name="projects">PROJECTS :</string>
+    <string name="name">Name</string>
+    <string name="space" />
+    <string name="branch">Branch</string>
+    <string name="semester">Semester</string>
+    <string name="e_mail">Email</string>
+    <string name="linkedin_id">LinkedIn</string>
+    <string name="add_link">Add link</string>
+    <string name="youtube">Youtube</string>
+    <string name="instagram_id">Instagram ID</string>
+    <string name="user_id">user_id</string>
+    <string name="search_here">Search user</string>
+    <string name="search_notes">Search user</string>
+    <string name="empty_ntap_add_to_announcement">Search a Mate</string>
+    <string name="faculty">Faculty</string>
+    <string name="delete">Delete Post</string>
+    <string name="customize">Swipe Up</string>
+    <string name="edit_post">Edit Post</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="roll_no">Roll no</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sync_with_smile">Sync with smile</string>
+    <string name="what_is_syno">What is SYNO?</string>
+    <string name="syno_short_for_synergy">Syno, short for Synergy is an app that depicts the power that togetherness holds. We as GECB students wanted a place to share thoughts among ourselves, so we came up with SYNO- a place open for every GECian to go for it. Sharing thoughts, syncing with teachers and students, everything is reduced to a touch. We are grateful that we were able to come up with this idea as it will act as a boon for people wanting to express themselves.\n\nUnderstanding is not always created while talking sometimes it is generated simply by reading a piece of article- one can understand about someone\'s mentality just by having a dive in their thoughts and that\'s something facilitated through our app. Let us make this process feasible by taking numerous dives into the thought processes of shareholders of our emotions: our users. But the essence of Syno will stay alive with each and every new post, so go ahead share your thoughts too and let the app live it\'s best life.</string>
+    <string name="about_developers">About Developers</string>
+    <string name="quote">\"Give a man a program, Frustrate him for a day. Teach a man to program, Frustrate him for a lifetime. \"</string>
+    <string name="arpita_singh">Arpita Singh</string>
+    <string name="nikhil_verma">Nikhil Verma</string>
+    <string name="priyanshu_anand">Priyanshu Anand</string>
+    <string name="om_yadav">Om Yadav</string>
+    <string name="edit">Edit</string>
+    <string name="browse">Browse</string>
+    <string name="enter_the_code_roll_no">Enter the code/Roll-no.</string>
+    <string name="github">Github</string>
+    <string name="edit_interest">Edit Interest</string>
+    <string name="save">Save</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="cse">CSE</string>
+    <string name="it">IT</string>
+    <string name="et_t">ET&amp;T</string>
+    <string name="electrical">Electrical</string>
+    <string name="mining">Mining</string>
+    <string name="mechanical">Mechanical</string>
+    <string name="civil">Civil</string>
+    <string name="seen_by">Seen by</string>
+    <string name="under_maintenance">Under Maintenance…</string>
+
+
+</resources>

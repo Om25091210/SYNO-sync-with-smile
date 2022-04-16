@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:clickable="true"
+    android:id="@+id/swipe_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_edit"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/neumorphCardView2"
+            app:tint="@color/grey_700" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/edit"
+            android:textColor="@color/grey_600"
+            app:layout_constraintEnd_toEndOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_lightSource="rightBottom"
+            app:neumorph_shadowColorDark="@color/light_one"
+            app:neumorph_shadowColorLight="@color/light_one"
+            app:neumorph_shadowElevation="7dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_shapeType="flat"
+            tools:ignore="MissingConstraints">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/em_1"
+                tools:ignore="ImageContrastCheck" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/name_pr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2"
+            app:neumorph_backgroundColor="@color/white"
+            app:neumorph_lightSource="rightBottom"
+            app:neumorph_shadowColorDark="@color/transparent"
+            app:neumorph_shadowColorLight="@color/orange_50"
+            app:neumorph_shadowElevation="7dp"
+            app:neumorph_shapeType="flat"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/tr_name"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck"
+                    tools:text="Arpita Singh" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/ic_tick_green"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/name_pr"
+            app:layout_constraintStart_toStartOf="@+id/name_pr"
+            app:layout_constraintTop_toTopOf="@+id/name_pr"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="colorfull.json"
+            app:lottie_loop="true" />
+
+        <ImageView
+            android:id="@+id/share_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/image"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:src="@drawable/ic_share_profile"
+            app:layout_constraintStart_toEndOf="@+id/neumorphCardView2"
+            app:layout_constraintTop_toTopOf="@+id/neumorphCardView2" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/ad_star"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/neumorphCardView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/neumorphCardView2"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="star.json"
+            app:lottie_loop="true"
+            app:lottie_repeatCount="2" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="3rd sem CSE"
+            android:textSize="15sp"
+            android:textColor="@color/grey_600"
+            android:textStyle="bold"
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_marginTop="-20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/card_github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:neumorph_lightSource="rightBottom"
+                app:neumorph_shadowColorDark="@color/light_one"
+                app:neumorph_shadowColorLight="@color/light_one"
+                app:neumorph_shadowElevation="7dp"
+                app:neumorph_shapeType="flat"
+                tools:ignore="MissingConstraints">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/github"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_github" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/card_youtube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:neumorph_lightSource="rightBottom"
+                app:neumorph_shadowColorDark="@color/light_one"
+                app:neumorph_shadowColorLight="@color/light_one"
+                app:neumorph_shadowElevation="7dp"
+                app:neumorph_shapeType="flat"
+                tools:ignore="MissingConstraints">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/youtube"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_youtube" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/card_linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:neumorph_lightSource="rightBottom"
+                app:neumorph_shadowColorDark="@color/light_one"
+                app:neumorph_shadowColorLight="@color/light_one"
+                app:neumorph_shadowElevation="7dp"
+                app:neumorph_shapeType="flat"
+                tools:ignore="MissingConstraints">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/linkedin"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_linkedin" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/card_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:neumorph_lightSource="rightBottom"
+                app:neumorph_shadowColorDark="@color/light_one"
+                app:neumorph_shadowColorLight="@color/light_one"
+                app:neumorph_shadowElevation="7dp"
+                app:neumorph_shapeType="flat"
+                tools:ignore="MissingConstraints">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/email"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_email"
+                    tools:ignore="ImageContrastCheck" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/card_insta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:neumorph_lightSource="rightBottom"
+                app:neumorph_shadowColorDark="@color/light_one"
+                app:neumorph_shadowColorLight="@color/light_one"
+                app:neumorph_shadowElevation="7dp"
+                app:neumorph_shapeType="flat"
+                tools:ignore="MissingConstraints">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/insta"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_insta" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/talks_about"
+            android:textColor="@color/orange_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            tools:ignore="TextContrastCheck" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/chat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView20"
+            app:layout_constraintStart_toEndOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/textView20"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="chat_anim.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            tools:text="Movies , Anime , Tech , Art"
+            android:textColor="@color/grey_600"
+            android:textSize="15sp"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/pr_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/bio"
+            android:textColor="@color/orange_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/quicksand_bold"
+            tools:text="A bio is a detailed description of someone’s life, professional
+background, education history, achievements, and skill set.
+Unlike a curriculum vitae, a bio presents a person’s life by
+highlighting important aspects such as their unique skill set,
+details of their professional experience, notable projects they
+are involved in, and an analysis of their personality."
+            android:textColor="@color/grey_600"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/pr_bio"
+            app:layout_constraintTop_toBottomOf="@+id/pr_bio" />
+
+
+        <TextView
+            android:id="@+id/pr_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/skill_s"
+            android:textColor="@color/orange_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/bio" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            tools:text="1) COMPUTER LITERATE
+
+Develop, Organize and Complete Tasks and Projects Using
+Software Programs Such as Word, Excel and PowerPoint.
+
+2) PLAN, ORGANIZE
+
+Define Goals and Objectives, Schedule and Develop Projects
+or Programs.
+
+3) OBSERVE
+
+Study, Scrutinize, Examine Data, People, or Things Scientifically."
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/pr_skill"
+            app:layout_constraintTop_toBottomOf="@+id/pr_skill" />
+
+        <TextView
+            android:id="@+id/pr_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/projects"
+            android:textColor="@color/orange_700"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+
+        <TextView
+            android:id="@+id/projects"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="30dp"
+            tools:text="Make Notepad using Tkinter
+Color game using Tkinter in Python
+Python | Message Encode-Decode using Tkinter
+XML parsing in Python
+Desktop Notifier in Python
+Hangman Game in Python
+Junk File Organizer in Python"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/pr_skill"
+            app:layout_constraintTop_toBottomOf="@+id/pr_project" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:paddingBottom="30dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/projects"
+            tools:listitem="@layout/home_card_design" />
+
+
+        <ImageView
+            android:id="@+id/imageRemoveImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/background_delete"
+            android:contentDescription="@string/app_name"
+            android:padding="4dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone"
+            android:layout_marginEnd="-40dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/neumorphCardView2"
+            app:layout_constraintTop_toTopOf="@+id/neumorphCardView2"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
